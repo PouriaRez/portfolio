@@ -15,15 +15,16 @@ html{
 }
 
 body{
-    background-color: #f4f2ee;
+    background-color: #31363F;
     background-blend-mode: multiply;
     background-size: cover;
+    color: #76ABAE;
 }
 
 .main-header{
     width: 100%;
-    color: white;
-    background-color: white;
+    color: #222831;
+    background-color: #222831;
 }
 
 .main-header h1{
@@ -50,17 +51,37 @@ body{
 }
 
 .nav a{
-    color: rgb(91, 91, 91);
+    color: rgb(255, 255, 255);
     font-size: 2rem;
     padding: 1em;
     text-decoration:none; 
 }
 
 .nav a :hover{
-    font-size: 2.1rem;
-    color: black;
+    color: #76ABAE;
     font-weight: bold;
 }
+
+/*.nav-link : used to add bar above nav options while hovering*/
+.nav-link{
+    position: relative;
+}
+
+
+.nav-link::after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    width: 0;
+    height: 2px;
+    top: 1.5rem;
+    left: 2rem;
+    transition: 150ms;
+}
+.nav-link:hover::after{
+    width: 70%;
+}
+
 
 ul{
     margin: 0;
@@ -131,6 +152,7 @@ ul{
     text-align: center; 
     font-size: 5rem;
     letter-spacing: 1rem;
+    position: relative;
 }
 
 #aboutme-section h1{
@@ -138,3 +160,17 @@ ul{
     font-size: 5rem;
     letter-spacing: 1rem;
 }
+
+.portrait{
+    border-radius: 50%;
+}
+
+::-webkit-scrollbar{
+    width: .9rem;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(to bottom, #76ABAE, #31363F);
+    border-radius: 5px;
+}
+

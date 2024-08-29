@@ -1,5 +1,7 @@
 TODO:
-1. Add scroll to top button after scrolling down --> added but try to improve on it
-2. Make header texts pop without so much jittering
-3. Actually add information to pages so it doesn't look so bland
-4. def. change the colors and stuff AKA make website prettier
+2. Actually add information to pages so it doesn't look so bland
+3. def. change the colors and stuff AKA make website prettier [IN PROGRESS]
+    a. grey/black/white color palette 
+    [Continue looking for color palettes: As of now using =
+        https://colorhunt.co/palette/22283131363f76abaeeeeeee ]
+    b. some sorta background geometric shapes?
