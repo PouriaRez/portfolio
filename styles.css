@@ -1,15 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: Roboto Mono;
+    color : #D3D3D3;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
 body{
-    background-color: #9DBDFF;
+    background-color: rgba(0,0,0, .6);
+    background-image: url("./Images/header-bg.jpg");
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
+
+.nav li{
+    display: inline;
+}
+
+.nav a{
+    padding: .5em;
+    text-decoration:overline; 
+}
+.nav a :hover{
+    font-size:22px;
+}
+
+.main-header{
+    color: white;
+}
+
+.main-header h1{
+    text-align: center;
+}
+
+.main-footer{
+    display: inline;
+    background-color: black;
 }
 
 .footerImg{
     width: 3rem;
     height: 3rem;
-
 }
 
-.headerNav{
-    font-weight: bold;
-
-
+#welcome-section{
+    height: 80rem;
+    background: purple;
 }
+
+#projects-section{
+    height: 80rem;
+    background: pink;
+}
+
