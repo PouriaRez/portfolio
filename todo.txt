@@ -1,0 +1,4 @@
+TODO:
+1. Add scroll to top button after scrolling down
+2. Make header texts pop without so much jittering
+3. Actually add information to pages so it doesn't look so bland
