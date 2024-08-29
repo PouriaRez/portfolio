@@ -22,23 +22,9 @@ body{
     background-size: cover;
 }
 
-.nav li{
-    display: inline;
-}
-
-.nav a{
-    font-size: 2rem;
-    padding: 1em;
-    text-decoration:none; 
-}
-
-.nav a :hover{
-    font-size: 2.5rem;
-    color: #ffffff;
-}
-
 .main-header{
     color: white;
+    background-color: rgb(0,0,0);
 }
 
 .main-header h1{
@@ -55,3 +41,92 @@ body{
     height: 3rem;
 }
 
+.nav{
+    border-bottom: 3px solid;
+}
+
+.nav li{
+    display: inline;
+}
+
+.nav a{
+    font-size: 2rem;
+    padding: 1em;
+    text-decoration:none; 
+}
+
+.nav a :hover{
+    font-size: 2.5rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+ul{
+    margin: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+.back-to-top-btn{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(66, 129, 212,.4);
+    border-radius: 0.5rem;
+    padding:0.5rem;
+    text-decoration: none;
+    transition: 0.2s ease-out;
+}
+
+.back-to-top-btn span{
+    transition: 0.2s ease-out;
+}
+
+.back-to-top-btn:hover{
+    background-color: rgba(55, 106, 173);
+}
+
+.back-to-top-btn span:hover{
+    transform: translateY(-4px);
+}
+
+.typewriter-container{
+    display: inline-block;
+    
+}
+
+.typewriter{
+    font-size: 3rem;
+    border-right: 2px solid;
+    padding-right: 3px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+        typing 2s,
+        cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes typing {
+    from {width: 0}
+}
+
+#projects-section h1{
+    text-align: center; 
+    font-size: 5rem;
+}
+
+#aboutme-section h1{
+    text-align: center; 
+    font-size: 5rem;
+}
