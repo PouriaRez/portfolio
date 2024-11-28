@@ -195,7 +195,6 @@ ul{
     border-radius: 5px;
 }
 
-<<<<<<< HEAD
 .welcome-container{
     padding: 1rem;
     display: flex;
@@ -234,23 +233,4 @@ ul{
     100% {
         transform: translateX(-50%);
     }
-=======
-
-.project-pics{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-
-}
-
-.project-pics img{
-    display: flex;
-    padding-top: 1%;
-
-}
-
-.aboutme-text{
-    font-size: 25px;
->>>>>>> 3d321c9c6e28009b35bc7d138b4c496a7e3c5c72
 }
