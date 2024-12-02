@@ -1,236 +1,257 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
-* {
-    box-sizing: border-box;
-    font-family: Roboto Mono;
-}
-
-html, body{
-    margin: 0;
-    padding: 0;
-}
-
-html{
-    scroll-behavior: smooth;
-}
-
-body{
-    background-color: #31363F;
-    background-blend-mode: multiply;
-    background-size: cover;
-    color: #76ABAE;
-}
-
-.main-header{
-    width: 100%;
-    color: #222831;
-    background-color: #222831;
-}
-
-.main-header h1{
-    text-align: center;
-}
-
-.main-footer{
-    padding: 1px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.main-footer ul{
-    display: flex;
-    align-self: flex-start;
-    list-style: none;       
-}
-
-.footerImg{
-    width: 3rem;
-    height: 3rem;
-}
-
-.nav{
-    border-bottom: 3px solid;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-}
-
-.nav p {
-    text-align: center; 
-    font-size: 2rem;
-    letter-spacing: 1rem;
-    color: #76ABAE;
-    margin-left: 1%;
-}
-
-
-.nav li{
-    display: inline;
-}
-
-.nav a{
-    color: rgb(255, 255, 255);
-    font-size: 2rem;
-    padding: 1em;
-    text-decoration:none; 
-}
-
-.nav a :hover{
-    color: #76ABAE;
-    font-weight: bold;
-}
-
-/*.nav-link : used to add bar above nav options while hovering*/
-.nav-link{
-    position: relative;
-}
-
-
-.nav-link::after{
-    content: "";
-    position: absolute;
-    background-color: #76ABAE;
-    width: 0;
-    height: 2px;
-    top: 1.5rem;
-    left: 2rem;
-    transition: 150ms;
-}
-.nav-link:hover::after{
-    width: 70%;
-}
-
-
-ul{
-    margin: 0;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-
-
-.back-to-top-btn{
-    position: fixed;
-    bottom: 1rem;
-    right: 1rem;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(66, 129, 212,.4);
-    border-radius: 3rem;
-    padding:1.5rem;
-    text-decoration: none;
-    transition: 0.2s ease-out;
-    margin-bottom: 6vh;
-}
-
-.back-to-top-btn span{
-    transition: 0.2s ease-out;
-}
-
-.back-to-top-btn:hover{
-    background-color: rgba(55, 106, 173);
-}
-
-.back-to-top-btn span:hover{
-    transform: translateY(-6px);
-}
-
-.typewriter-true-container{
-    text-align: center;
-}
-
-
-.typewriter-box{
-    display: inline-block;
-    
-}
-
-.typewriter{
-    font-size: 3rem;
-    border-right: 2px solid;
-    padding-right: 3px;
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    animation:
-        typing 2s,
-        cursor .4s step-end infinite alternate;
-}
-
-@keyframes cursor {
-    50% {
-        border-color: transparent;
+    * {
+        box-sizing: border-box;
+        font-family: Roboto Mono;
     }
-}
 
-@keyframes typing {
-    from {width: 0}
-}
-
-#projects-section h1{
-    text-align: center; 
-    font-size: 5rem;
-    letter-spacing: 1rem;
-    position: relative;
-}
-
-#aboutme-section h1{
-    text-align: center; 
-    font-size: 5rem;
-    letter-spacing: 1rem;
-}
-
-.portrait{
-    width: 25%;
-    height: 25%;
-    border-radius: 50%;
-}
-
-::-webkit-scrollbar{
-    width: .9rem;
-}
-
-::-webkit-scrollbar-thumb{
-    background: linear-gradient(to bottom, #76ABAE, #31363F);
-    border-radius: 5px;
-}
-
-.welcome-container{
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-
-/* work on this to make the transitions smoother for the scrolling effect. */
-
-.tech-stack-container{
-    display: flex;
-    width: 25%;
-    overflow: hidden;
-    align-items: center;
-    justify-content: center;
-}
-
-.tech-stack-track{
-    display: flex;
-    gap: 1rem;
-    animation: scroll 5s linear infinite;
-}
-
-.tech-stack-track img{
-    padding-top: .5rem;
-    height: 3rem;
-    width: 3rem;
-}
-
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
+    html, body{
+        margin: 0;
+        padding: 0;
     }
-    100% {
-        transform: translateX(-50%);
+
+    html{
+        scroll-behavior: smooth;
     }
-}
+
+    body{
+        background-color: #31363F;
+        background-blend-mode: multiply;
+        background-size: cover;
+        color: #76ABAE;
+    }
+
+    .main-header{
+        width: 100%;
+        color: #222831;
+        background-color: #222831;
+    }
+
+    .main-header h1{
+        text-align: center;
+    }
+
+    .main-footer{
+        align-items: center;
+        padding: .1rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-footer ul{
+        display: flex;
+        align-self: flex-start;
+        gap: 1rem;
+        list-style: none;       
+    }
+
+    .footerImg{
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .nav{
+        border-bottom: 3px solid;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .nav p {
+        text-align: center; 
+        font-size: 2rem;
+        letter-spacing: 1rem;
+        color: #76ABAE;
+        margin-left: 1%;
+    }
+
+
+    .nav li{
+        display: inline;
+    }
+
+    .nav a{
+        color: rgb(255, 255, 255);
+        font-size: 2rem;
+        padding: 1em;
+        text-decoration:none; 
+    }
+
+    .nav a :hover{
+        color: #76ABAE;
+        font-weight: bold;
+    }
+
+    /*.nav-link : used to add bar above nav options while hovering*/
+    .nav-link{
+        position: relative;
+    }
+
+
+    .nav-link::after{
+        content: "";
+        position: absolute;
+        background-color: #76ABAE;
+        width: 0;
+        height: 2px;
+        top: 1.5rem;
+        left: 2rem;
+        transition: 150ms;
+    }
+    .nav-link:hover::after{
+        width: 70%;
+    }
+
+
+    ul{
+        margin: 0;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+
+    .back-to-top-btn{
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(66, 129, 212,.4);
+        border-radius: 3rem;
+        padding:1.5rem;
+        text-decoration: none;
+        transition: 0.2s ease-out;
+        margin-bottom: 6vh;
+    }
+
+    .back-to-top-btn span{
+        transition: 0.2s ease-out;
+    }
+
+    .back-to-top-btn:hover{
+        background-color: rgba(55, 106, 173);
+    }
+
+    .back-to-top-btn span:hover{
+        transform: translateY(-6px);
+    }
+
+    .typewriter-true-container{
+        text-align: center;
+    }
+
+
+    .typewriter-box{
+        display: inline-block;
+        
+    }
+
+    .typewriter{
+        font-size: 3rem;
+        border-right: 2px solid;
+        padding-right: 3px;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        animation:
+            typing 1.5s,
+            cursor .4s step-end infinite alternate;
+    }
+
+    @keyframes cursor {
+        50% {
+            border-color: transparent;
+        }
+    }
+
+    @keyframes typing {
+        from {width: 0}
+    }
+
+    #projects-section h1{
+        text-align: center; 
+        font-size: 5rem;
+        letter-spacing: 1rem;
+        position: relative;
+    }
+
+    #aboutme-section h1{
+        text-align: center; 
+        font-size: 5rem;
+        letter-spacing: 1rem;
+    }
+
+    .portrait{
+        box-shadow: 1rem 1rem 50px black;
+        width: 25%;
+        height: 25%;
+        border-radius: 50%;
+    }
+
+    ::-webkit-scrollbar{
+        width: .9rem;
+    }
+
+    ::-webkit-scrollbar-thumb{
+        background: linear-gradient(to bottom, #76ABAE, #31363F);
+        border-radius: 5px;
+    }
+
+    .welcome-container{
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    /* work on this to make the transitions smoother for the scrolling effect. */
+
+    .tech-stack-container{
+        display: flex;
+        width: 25%;
+        overflow: hidden;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+
+    }
+
+    .tech-stack-track{
+        cursor: pointer;
+        display: flex;
+        gap: .4rem;
+        animation: scroll 5s linear infinite;
+    }
+
+    .paused-track {
+        animation-play-state: paused;
+    }
+
+    .tech-stack-track img{
+        padding-top: .5rem;
+        height: 3rem;
+        width: 3rem;
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-25%);
+        }
+    }
+
+    .project-pics {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .project-pics img {
+        width: 25%;
+    }
