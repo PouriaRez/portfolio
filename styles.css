@@ -216,14 +216,13 @@
         align-items: center;
         justify-content: center;
         margin-top: 1rem;
-
     }
 
     .tech-stack-track{
         cursor: pointer;
         display: flex;
         gap: .4rem;
-        animation: scroll 5s linear infinite;
+        animation: scroll 10s linear infinite;
     }
 
     .paused-track {
@@ -254,4 +253,61 @@
 
     .project-pics img {
         width: 25%;
+    }
+    
+    .projects-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .lockin-card{
+        width: 25%;
+        height: 25vh;
+        border: 1px solid grey;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    .lockin-title{
+        display: flex;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+
+    .lockin-desc{
+        display: flex;
+        text-align: center;
+    }
+
+
+    
+    .t4g-card{
+        width: 25%;
+        height: 25vh;
+        border: 1px solid grey;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+
+    .t4g-title{
+        display: flex;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+
+    .t4g-desc{
+        display: flex;
+        text-align: center;
     }

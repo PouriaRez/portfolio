@@ -5,3 +5,8 @@ TODO:
     [Continue looking for color palettes: As of now using =
         https://colorhunt.co/palette/22283131363f76abaeeeeeee ]
     b. some sorta background geometric shapes?
+
+4. Work on color scheme for project cards.
+    a. maybe use a gradient
+
+5. Implement some cool animations and onClick effects for the project cards.
